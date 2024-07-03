@@ -8,7 +8,7 @@ text.addEventListener('input', function () {
 let textTask2 = document.querySelector('#task2');
 textTask2.addEventListener('input', function () {
     document.querySelector('#output1-task2').innerHTML = "Количество символов :" + textTask2.value.length;
-    document.querySelector('#output2-task2').innerHTML = "Количество слов :" + textTask2.value.trim().split(/[\s,\.]+/);
+    document.querySelector('#output2-task2').innerHTML = "Количество слов :" + textTask2.value.trim().split(/[\s,\.]+/).length;
     document.querySelector('#output3-task2').innerHTML = "Количество строк :" + textTask2.value.split("\n").length;
 })
 
