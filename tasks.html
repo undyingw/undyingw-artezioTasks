@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <ul id="nav-bar">
+            <li><a href="index.html">ГЛАВНАЯ</a></li>
+            <li><a href="#">ЗАДАНИЯ</a></li>
+            <li><button>НАСТРОЙКИ</button></li>
+        </ul>
+    </header>
+    <main>
+        <div class="fixed-container">
+            <h1>
+                Список заданий
+            </h1>
+            <h2 style="margin-top: 40px;">Задание 1. Ввод символов</h2>
+            <div >
+                <input type="text" id="text-input">
+                <p id="output">
+                    Количество символов: 0
+                </p>
+                
+            </div>
+            <h2 style="margin-top: 40px;">Задание 2. Ввод Текста</h2>
+            <div>
+                <textarea name="task2" id="task2" cols="50"></textarea>
+                <p id="output1-task2">
+                    Количество символов: 0 
+                </p>
+                <p id="output2-task2">
+                    Количество символов: 0
+                </p>
+                <p id="output3-task2">
+                    Количество строк: 0
+                </p>
+            </div>
+            <h2 style="margin-top: 40px;">Задание 3. Проверка Ввода</h2>
+            <div>
+                <input type="text" id="task3">
+                <p id="output-task3">
+                    Осталось символов: 10
+                </p>
+            </div>
+            <h2 style="margin-top: 40px;">Задание 4. Ограничение Ввода</h2>
+            <div>
+                <div id="task4-container">
+                    <textarea name="task4" id="task4" cols="50"></textarea>
+                    <input type="checkbox" id="task4CheckBox">
+                    <p style="margin: 0;">Запретить превышение</p>
+                </div>
+                <p id="output-task4">
+                    Осталось символов: 10
+                </p>
+                
+            </div>
+            <h2 style="margin-top: 40px;">Задание 5. Слайдер картинок</h2>
+            <div id="slider">
+                <div class="slideItem"><img src="img/2023-10-17-21-53-072.webp" alt=""></div>
+                <div class="slideItem"><img src="img/240813_1_trinixy_ru.jpg" alt=""></div>
+                <div class="slideItem"><img src="img/2af53d8f1be483dd0e05b7b18142c33c.jpg" alt=""></div>
+                <div class="slideItem"><img src="img/356661-krome-hellou-kitti-33.jpg" alt=""></div>
+                <div class="slideItem"><img src="img/ddf87827dd19e5a841f1994688f84ce8.jpg" alt=""></div>
+
+                <button class="left-arrow"><img src="img/arrow.png" alt=""></button>
+                <button class="right-arrow"><img src="img/arrow.png" alt=""></button>
+
+            </div>
+
+            <h2 style="margin-top: 40px;">Задание 6. Разность дат</h2>
+            <div id="task6">
+                <p id="Data">
+
+                </p>
+
+                Дата события: 
+                <select name="day" id="daySelector"></select>
+                <select name="month" id="monthSelector"></select>
+                <select name="year" id="yearSelector"></select>
+
+                <p id="dateDifference">
+                    Событие произошло сегодня
+                </p>
+            </div>
+
+            <h2 style="margin-top: 40px;">Задание 7. Прямоугольник</h2>
+            <div id="task7-background">
+                <div id="task7-geometry-figure">
+
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+    <script src="script.JS"></script>
+</body>
+</html>
